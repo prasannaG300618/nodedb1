@@ -10,7 +10,7 @@ const app=express();
 const con=sql.createConnection({
 host:"nodebase.crcwgeeoeb2d.us-east-1.rds.amazonaws.com",
 user:"admin",
-database:"form",
+database:"form4",
 password:"Pras300618"
 });
 const storage = multer.diskStorage({
@@ -71,7 +71,7 @@ app.post("/data", upload.single('img') ,(req, res) => {
     const online="onlne";
     const sn=null;
     console.log(username+" "+mail+" "+clg+" "+dep+" "+year+" "+ph+" "+pp+" "+wd+" "+cd+" "+ws+" "+pe+" "+ed+" "+tq)
-    var q="INSERT INTO symbosium(name,name2,name3,email,email2,email3,college,department,department2,department3,year,year2,year3,phone,phon2,phon3,Paperpresentation,WebDesign,Codedebugging,Workshop,ProjectExpo,Posterpresentation,Technicalquiz,Payment) VALUES('"+username+"','"+name2+"','"+name3+"','"+mail+"','"+mail2+"','"+mail3+"','"+clg+"','"+dep+"','"+dep2+"','"+dep3+"','"+year+"','"+year2+"','"+year3+"','"+ph+"','"+ph2+"','"+ph3+"','"+pp+"','"+wd+"','"+cd+"','"+ws+"','"+pe+"','"+ed+"','"+tq+"','"+online+"')";
+    var q="INSERT INTO symbo(name1,name2,name3,email,email2,email3,college,department,department2,department3,year1,year2,year3,phone,phon2,phon3,Paperpresentation,WebDesign,Codedebugging,Workshop,ProjectExpo,Posterpresentation,Technicalquiz,Payment) VALUES('"+username+"','"+name2+"','"+name3+"','"+mail+"','"+mail2+"','"+mail3+"','"+clg+"','"+dep+"','"+dep2+"','"+dep3+"','"+year+"','"+year2+"','"+year3+"','"+ph+"','"+ph2+"','"+ph3+"','"+pp+"','"+wd+"','"+cd+"','"+ws+"','"+pe+"','"+ed+"','"+tq+"','"+online+"')";
     con.query(q,function(err,result){
       if(err){
         
