@@ -1,0 +1,757 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="img/logo_for_2k24.ai-removebg (1).png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>
+        TECHSPARK EVENT REGISTRATION FORM
+    </title>
+</head>
+<style>
+    body{
+        font-family: poppins;
+        align-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url(img/20410336.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        padding-bottom: 30px;
+
+    }
+    @media(max-device-width:600px){
+  body{
+  display: flex;
+  }
+}
+    .box{
+      background: rgba(39, 39, 39, 0.1);
+    backdrop-filter: blur(10px);
+    
+    -webkit-backdrop-filter: blur(60px);
+
+      margin-top: 30px;
+      border-radius: 15px;
+      box-shadow: 10px 10px 20px rgb(80, 80, 80);
+      padding-left: 20px;
+    }
+    #myCarousel{
+        height: 100%;
+        width: 100%;
+       border-radius: 20px;
+       box-shadow: 10px 10px 20px rgb(80, 80, 80);
+      
+        
+    }
+    .box{
+        padding:10px;
+        padding-left: 20px;
+        width:50%;
+    }
+    #box2{
+      background: rgba(39, 39, 39, 0.1);
+    backdrop-filter: blur(10px);
+    display: none;
+    -webkit-backdrop-filter: blur(60px);
+
+      margin-top: 20px;
+      border-radius: 15px;
+      box-shadow: 10px 10px 20px rgb(80, 80, 80);
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #det{
+        padding:5px;
+        display: block;
+        font-weight: 500;
+    }
+    #ig{
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px gray;
+    }
+    #box-1{
+      color: white;
+      background-color: rgba(24, 81, 88, 0.5);
+      height: 45px;
+      width: 100%;
+      border-radius: 10px;
+      outline: none;
+      border: none;
+      transition: .4s ease;
+      padding: 10px;
+    }
+    #box-1:hover{
+      box-shadow: 10px 10px 10px rgb(122, 133, 141, 0.3);
+    }
+    #box-2{
+      color: white;
+      background-color: rgba(24, 81, 88, 0.5);
+      height: 45px;
+      width: 100%;
+      border-radius: 10px;
+      outline: none;
+      border: none;
+      transition: .4s ease;
+      padding: 10px;
+    }
+    #box-2:hover{
+      box-shadow: 10px 10px 10px rgb(122, 133, 141, 0.3);
+    }
+    .button{
+      color:rgb(139, 194, 202);
+      
+      height: 45px;
+      width: 100%;
+      border-radius: 10px;
+      outline: none;
+      border: none;
+      margin-top: 10px;
+      transition: .4s ease;
+      padding: 10px;
+      background-color: rgba(136, 149, 184, 0.3) ;
+      
+
+    }
+    .button:hover{
+      box-shadow: 10px 10px 10px rgb(122, 133, 141, 0.3);
+      background-color: rgba(24, 81, 88, 0.5);
+    }
+    label{
+      color: rgb(238, 236, 236);
+      font-weight: 500;
+    }
+    #te{
+      width: 200px;
+    position: relative;
+    left: 20px;
+    bottom: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    }
+    #ch{
+    height: 15px;
+    width: 15px;
+    display: flex;
+    flex-direction: column; 
+    width: 20px;
+    position: relative; 
+    vertical-align:start;
+    }
+    @media(max-device-width:600px){
+      .box{
+        width: 90%;
+      }
+      .hd{
+        font-size: ;
+      }
+    }
+    
+    .hd{
+      font-family: "Cinzel", serif;
+      margin-top: 40px;
+      background: -webkit-linear-gradient(#02457a, #018abe);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     
+    }
+    #qr{
+      height: 200px;
+      width: 200px;
+     
+      position: relative;
+      align-items: center;
+      justify-content: center;
+    }  
+    .animate-charcter
+{
+   text-transform: uppercase;
+   font-family: POPPINS;
+   font-style: normal;
+   font-weight: 700;
+  background-image: linear-gradient(
+    -225deg,
+    #f7f6f6 0%,
+    #420088 40%,
+    #007a6e 67%,
+    #007c4f 100%
+  );
+  margin-top: 15px ;
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 6s linear infinite;
+  display: inline-block;
+  font-size: 30px;
+}
+@media(max-device-width:600px){
+  .animate-charcter{
+    margin-top: 50px;
+  }
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}  
+#erode {
+  
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+	border: 7px double rgba(255,255,255,.25);
+	border-width: 7px 0;
+	padding: 0.5em 0em;
+	position: absolute;
+	top: 1px;
+	left: 55%;
+	width: 50em;
+  margin: 0 0 0 -30em;
+  margin-top: 20px;
+  
+
+  
+  span {
+
+  	font: 700 2em/1 "poppins", sans-serif;
+    font-weight: 1000;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: flex;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+	  background: url(img/20410336.jpg) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 20s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+  }
+}
+@media(max-device-width:600px){
+  #erode{
+
+    display: flexbox;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    margin-left:-53%;
+    margin-top: 20px;
+  }
+}
+@media(max-device-width:600px){
+  .hd{
+    margin-top: 70px;
+  }
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+/*#logo{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  right: 100px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 70px;
+  width: 70px;
+}*/
+#fcard{
+  margin-top: 20px;
+  margin-right: 20%;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  margin: auto;
+  margin: 10px;
+  border-radius: 10px;
+  
+}
+#cardimg{
+  border-radius: 10px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+
+
+#ab {
+  margin-left: 10px;
+  text-decoration: none;
+  line-height: 30px;
+  color: black;
+}
+
+#b1:hover, a:hover {
+  opacity: 0.7;
+}
+@media(max-device-width:600px){
+  #fcard{
+    margin: 15px;
+   
+   
+  }
+  .card{
+    max-width: 400px;
+  }
+}
+ul.card{
+  list-style-type: square;
+}
+#cont{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #f7f6f6;
+  padding: 0px;
+  
+}
+#p1,#p2,#p3{
+  padding: 20px;
+}
+#r1{
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+#box3{
+  position: relative;
+  display: flex;
+  color: #f7f6f6;
+  /*margin-left: 80%;*/
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  bottom: 50px;
+  margin-right: 40px;
+  margin-bottom: -50px;
+ 
+  margin-left: 150px;
+}
+#tot{
+  margin-right: 30px;
+}
+
+</style>
+    <body>
+      <center><p id="erode" >  
+        <span>
+          ERODE SENGUNTHAR ENGINEERING COLLEGE
+        </span>
+        <span>
+          INFORMATION TECHNOLOGY
+        </span>
+        
+      </p></center>
+
+      <!--<img id="logo" src="img/logo_for_2k24.ai-removebg.png" alt="">-->
+      <br><br><br><br>
+      <DIV class="hd" style="font-size: 3vh;">
+        
+        
+         
+           
+              <h3 class="animate-charcter"> TECHSPARK 2K24</h3>
+            
+          
+      </DIV>
+            
+        
+        <div id="fcard">
+        <div class="card">
+          <img id="cardimg" src="img/tump/_9bcec0ca-b498-4b9a-8d3c-10948058fc2c.jpeg" alt="John" style="width:100%;" >
+          <h2 id="ab">The Art of Paper</h2>
+          <h4 id="ab">Paper Presentation</h4>
+          <!--<p class="title" id="ab">CEO & Founder, Example</p>-->
+          <ul id="ab">
+          <li id="ab">Online registered team can only paricipate</li>
+          <li id="ab">Maximum of 3 participants</li>
+          <li id="ab">Topic should be technical</li>
+          <li id="ab">Maximum 15 slides</li>
+          <li id="ab">Abstarct due by specified date</li>
+        </ul>
+        </div>
+        <div class="card">
+          <img id="cardimg" src="img/tump/projectexpo.jpeg" alt="John" style="width:100%">
+          <h2 id="ab">Brainwave Showcase</h2>
+          <h4 id="ab">Project & Idea Presentation</h4>
+          <!--<p class="title" id="ab">CEO & Founder, Example</p>-->
+          <ul id="ab">
+          <li id="ab">Online registered team can only paricipate</li>
+          <li id="ab">Maximum of 3 participants</li>
+          <li id="ab">Topic shouold be innovative</li>
+          <li id="ab">Maximum 15 slides</li>
+          <li id="ab">Abstarct due by specified date</li>
+        </ul>
+        </div>
+        <div class="card">
+          <img id="cardimg" src="img/tump/_45e293d1-e3ab-448f-ace2-18338c79d7df.jpeg" alt="John" style="width:100%">
+          <h2 id="ab">Web Designing</h2>
+          <h4 id="ab">Front End</h4>
+          <!--<p class="title" id="ab">CEO & Founder, Example</p>-->
+          <ul id="ab">
+          <li id="ab">Maximum 2 participants</li>
+          <li id="ab">Shouldn't use mobile & internet</li>
+          <li id="ab">1 hour total time</li>
+        </ul>
+        </div>
+        <div class="card">
+          <img id="cardimg" src="img/tump/poster.jpeg" alt="John" style="width:100%">
+          <h2 id="ab">Design Fusion</h2>
+          <h4 id="ab">Poster Designing</h4>
+          <!--<p class="title" id="ab">CEO & Founder, Example</p>-->
+          <ul id="ab">
+            <li id="ab">Best design get first place</li>
+            <li id="ab">1 hour total time</li>
+            <li id="ab">Single participant</li>
+        </ul>
+        </div>
+        <div class="card">
+          <img id="cardimg" src="img/tump/debugging.jpeg" alt="John" style="width:100%">
+          <h2 id="ab">Debug Dynamo</h2>
+          <h4 id="ab">Code Debugging</h4>
+          <!--<p class="title" id="ab">CEO & Founder, Example</p>-->
+          <ul id="ab">
+          <li id="ab">Single participant</li>
+          <li id="ab">Two rounds</li>
+          <li id="ab">Question will be technical</li>
+          <li id="ab">Top 10 will move ahead for final round</li>
+          <li id="ab">45 minutes</li>
+        </ul></div>
+        <div class="card">
+          <img id="cardimg" src="img/tump/quiz.jpeg" alt="John" style="width:100%">
+          <h2 id="ab">Quiz Odyssey</h2>
+          <h4 id="ab">Technical Quiz </h4>
+          <!--<p class="title" id="ab">CEO & Founder, Example</p>-->
+          <ul>
+          <li id="ab">Single participant</li>
+          <li id="ab">Question will be technical</li>
+          <li id="ab">Shouldn't use mobile & internet</li>
+          <li id="ab">1.5 mins for each question</li>
+          <li id="ab">30 questions, 45 minutes</li>
+        </ul>
+        </div>
+      </div>
+        <div class="box" id="1st">
+          
+          <!--candidate 1 form-->
+                <form action="/data" method="POST" enctype="multipart/form-data">
+                  
+                <div id="one" style="display: block;">
+            <label class="name" id="det">Name:</label>
+            <input class="input"type="text" name="name" id="box-1"><br>
+            <label class="name" id="det">Email:</label>
+            <input class="input"type="email" name="mail" id="box-1"><br>
+            <label class="clg" id="det">College Name</label>
+            <input type="text" class="input" name="clg" id="box-1"><br>
+            <label class="Depart" id="det">Department </label>
+            <input type="text" class="input" name="dept" id="box-1"><br>
+            <label class="year" id="det">Year</label>
+            <select name="Year" class="year" id="box-1" >
+                <option value="" disabled selected hidden>      </option>
+                <option value="I">I</option>
+                <option value="II">II</option>
+                <option value="III">III</option>
+                <option value="IV">IV</option>
+            </select ><br>
+            <label class="phn" id="det">Phone Number </label>
+            <input type="tel" class="phn" name="phn" id="box-1">
+            <br>
+            <label>Roll Number: </label>
+            <input type="text" name="Roll"  id="box-1"><br>
+            <label>Select Event: </label>
+            <div class="che">
+            <input type="checkbox" value="YES" name="PP" id="ch"> <label for="" id="te">The Art of Paper</label>  
+            <input type="checkbox" value="YES" name="WD" id="ch"><label for="" id="te" > Web designing </label> 
+            <input type="checkbox" value="YES" name="CD" id="ch"><label for="" id="te" > Debug Dynamo</label>
+            <input type="checkbox" value="YES" name="TQ" id="ch"><label for="" id="te" > Quiz Odyssey</label> 
+            <input type="checkbox" value="YES" name="PE" id="ch"><label for="" id="te" > Brainwave Showcase</label>
+            <input type="checkbox" value="YES" name="ED" id="ch"><label for="" id="te" > Design Fusion</label>
+            <!--<input type="checkbox" value="YES" name="WS" id="ch"><label for="" id="te" > WorkShop</label>-->
+            
+            </div></div>
+              <!--add partcipent functions-->
+              <label for="" >Team Format</label>
+              <select name="num" class="year" id="box-2" >
+                <option value="0" >Solo</option>
+                <option value="1">Duo</option>
+                <option value="2" >Trio</option>
+            </select ><br>
+         <!--   <button type="button" onclick="add()" class="button">proceed</button>-->
+<!--add participants end-->
+<!--canditate 2 form-->
+            <div id="two" style="display: none;">
+              <label class="name" id="det">Name:</label>
+              <input class="input"type="text" name="name2" id="box-1"><br>
+              <label class="name" id="det">Email:</label>
+              <input class="input"type="email2" name="mail2" id="box-1"><br>
+              <label class="clg" id="det">College Name</label>
+              <input type="text" class="input" name="clg" id="box-1"><br>
+              <label class="Depart" id="det">Department </label>
+              <input type="text" class="input" name="dept2" id="box-1"><br>
+              <label class="year" id="det">Year</label>
+              <select name="Year2" class="year" id="box-1" >
+                  <option value="" disabled selected hidden>      </option>
+                  <option value="I">I</option>
+                  <option value="II">II</option>
+                  <option value="III">III</option>
+                  <option value="IV">IV</option>
+              </select ><br>
+              <label class="phn" id="det">Phone Number </label>
+              <input type="tel" class="phn" name="phn2" id="box-1">
+              <br>
+              <label>Roll Number: </label>
+              <input type="text" name="Roll"  id="box-1"><br>
+              <label>Select Event: </label>
+              <div class="che">
+              <input type="checkbox" value="YES" name="PP" id="ch"> <label for="" id="te">Paper Presentation</label>  
+              <input type="checkbox" value="YES" name="WD" id="ch"><label for="" id="te" > Web designing </label> 
+              <input type="checkbox" value="YES" name="CD" id="ch"><label for="" id="te" > Code Debugging</label>
+              <input type="checkbox" value="YES" name="TQ" id="ch"><label for="" id="te" > Technical Quiz</label> 
+              <input type="checkbox" value="YES" name="PE" id="ch"><label for="" id="te" > Project Expo</label>
+              <input type="checkbox" value="YES" name="WS" id="ch"><label for="" id="te" > WorkShop</label>
+              
+              </div></div>
+<!--cantitate 3 form-->
+              <div id="three" style="display: none;">
+                <label class="name" id="det">Name:</label>
+                <input class="input"type="text" name="name3" id="box-1"><br>
+                <label class="name" id="det">Email:</label>
+                <input class="input"type="email" name="mail3" id="box-1"><br>
+                <label class="clg" id="det">College Name</label>
+                <input type="text" class="input" name="clg" id="box-1"><br>
+                <label class="Depart" id="det">Department </label>
+                <input type="text" class="input" name="dept3" id="box-1"><br>
+                <label class="year" id="det">Year</label>
+                <select name="Year3" class="year" id="box-1" >
+                    <option value="" disabled selected hidden>      </option>
+                    <option value="I">I</option>
+                    <option value="II">II</option>
+                    <option value="III">III</option>
+                    <option value="IV">IV</option>
+                </select ><br>
+                <label class="phn" id="det">Phone Number </label>
+                <input type="tel" class="phn" name="phn3" id="box-1">
+                <br>
+                <label>Roll Number: </label>
+                <input type="text" name="Roll"  id="box-1"><br>
+                <label>Select Event: </label>
+                <div class="che">
+                <input type="checkbox" value="YES" name="PP" id="ch"> <label for="" id="te">Paper Presentation</label>  
+                <input type="checkbox" value="YES" name="WD" id="ch"><label for="" id="te" > Web designing </label> 
+                <input type="checkbox" value="YES" name="CD" id="ch"><label for="" id="te" > Code Debugging</label>
+                <input type="checkbox" value="YES" name="TQ" id="ch"><label for="" id="te" > Technical Quiz</label> 
+                <input type="checkbox" value="YES" name="PE" id="ch"><label for="" id="te" > Project Expo</label>
+                <input type="checkbox" value="YES" name="WS" id="ch"><label for="" id="te" > WorkShop</label>
+                
+                </div></div>
+              
+            <label id="det">Payment Method</label>
+            <p style="color: #f7f6f6; font-size: 20px; font-weight: 500;">&#x20B9 250 per person/day</p> 
+            <select id="box-1">
+             
+                <!--<option value="" disabled>      </option>-->
+                <option value="Online">Online</option>
+              </select><br>
+                <button id="pay" type="button" onclick="amont()" style="display: block;" class="button">Click to Pay</button>
+                <!--QR code-->
+                <br>
+                <center><img src="img/GATEWAY/250.jpg" id="qr" alt="" style="display: none;"></center>
+             <center> <label id ="h4"for=""></label></center><!--or-->
+                <div id="box2"> <center><label for="" id="h5"></label></center></div>
+            <label id="det">Upload payment proof</label>
+         <input type="file" name="img" id="img">
+         <div id="box3"> 
+         <p style="font-size: 18px;">Total Fees</p>
+         
+         <p id="tot" style="font-size: 18px; font-weight: 400;">&#x20B9 250</p>
+        </div>
+         
+            <button type="SUIT" class="button" onclick="ms()" id="sub" disabled="disabled" name="sub"><B>GO WITH THE FLOW!</B></button>
+        </form>
+        
+        </div>
+
+        <div class="background-image">
+          <div class="h"> 
+       </div> 
+       <div id="myCarousel" class="carousel slide" data-ride="carousel" style="border-radius: 25px;">
+           <!-- Indicators -->
+           <ol class="carousel-indicators" >
+             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+             <li data-target="#myCarousel" data-slide-to="1"></li>
+             <li data-target="#myCarousel" data-slide-to="2"></li>
+             <li data-target="#myCarousel" data-slide-to="3"></li>
+           </ol>
+       
+           <!-- Wrapper for slides -->
+           <div class="carousel-inner" style="border-radius: 20px;">
+             <div class="item active">
+               <img id="ig" src="img/esecindia-20240305-0004.jpg" alt="ESEC" style="width:750px; height: 450px; max-height:300px; min-width: 300px;">
+             </div>
+       
+             <div class="item">
+               <img id="ig" src="img/esec_fun_park-20240305-0001.jpg" alt="ESEC"  style="width:750px; height: 450px;max-height:300px; min-width: 300px;">
+             </div>
+           
+             <div class="item">
+               <img id="ig" src="img/esecindia-20240305-0003.jpg" alt="ESEC" style="width:750px; height: 450px;max-height:300px;min-width: 300px;">
+             </div>
+             
+           </div>
+       
+           <!-- Left and right controls -->
+           <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="border-radius: 20px; ">
+             <span class="glyphicon glyphicon-chevron-left"></span>
+             <span class="sr-only">Previous</span>
+           </a>
+           <a class="right carousel-control" href="#myCarousel" data-slide="next" style="border-radius: 20px; ">
+             <span class="glyphicon glyphicon-chevron-right"></span>
+             <span class="sr-only">Next</span>
+           </a>
+         </div>
+       </div>
+        <div id="cont">
+          
+          <div id="p1"><h4>Staff Co-ordinator  </h4><p> </p>
+            <h4>Mr.M.Dhanapal AP/IT </h4>
+            <h4>9994036446</h4>
+          </div>
+              <div id="p2"><h4>Student Co-ordinator  </h4>
+                <h4>Pavithra S</h4>
+                <h4>9578068622</h4>
+              </div>
+              <div id="p3"><h4>Student Co-ordinator </h4>
+                <h4>Dharneesh M T</h4>
+                <h4>6374506995</h4>
+              </div>
+        </div>
+        </div>
+       
+        <script>
+          /*submit buttton enable function*/ 
+         $(document).ready(function( ){
+            $('#img').change(function(){
+              $('#sub').removeAttr("disabled")
+            })
+          } );
+  /*submit buttton activate function*/ 
+          function ms(){
+
+    window.alert("Conformation Mail was sent to your mail. If not received check inSpam");
+            }
+let bill1=250
+$(document).ready(function(){
+  $('#box-2').change(function(){
+    let a=document.getElementById('box-2').value
+    //window.alert(a+" Number of participants");
+    let bill=250;
+    if(a=="1"){
+      bill = 2*bill
+      document.getElementById('qr').src="img/GATEWAY/500.jpg"
+      document.getElementById('two').style.display='block'
+      document.getElementById('three').style.display='none'
+    }else if(a=='2'){
+      bill = 3*bill
+      document.getElementById('qr').src="img/GATEWAY/700.jpg"
+      document.getElementById('three').style.display='block'
+      document.getElementById('two').style.display='block'
+    }else if(a=='0'){
+      bill = 1*bill
+      document.getElementById('qr').src="img/GATEWAY/250.jpg"
+      document.getElementById('three').style.display='none'
+      document.getElementById('two').style.display='none'
+    }
+    bill1=bill
+   document.getElementById("tot").innerHTML="<span>&#x20B9</span>"+ bill
+  })
+})
+
+              /*participants fun*/ 
+            function add(){
+              let a=document.getElementById('box-2').value
+    window.alert(a+" Number of participants");
+    if(a=="1"){
+      document.getElementById('two').style.display='block'
+      document.getElementById('three').style.display='none'
+    }else if(a=='2'){
+      document.getElementById('three').style.display='block'
+      document.getElementById('two').style.display='block'
+    }else if(a=='0'){
+      document.getElementById('three').style.display='none'
+      document.getElementById('two').style.display='none'
+    }
+            }
+           
+  /*Payment enable function*/ 
+            function amont(){
+              window.alert("Type "+bill1+" while pay the amount")
+document.getElementById('qr').style.display='block'
+document.getElementById('pay').style.display='none'
+document.getElementById('h4').innerHTML="or"
+document.getElementById('box2').style.display='flex'
+document.getElementById('h5').innerHTML="<center> <br>UPI NUMBER: 9790123345 <br><center>or</center><br> A/C NUMBER : 1234567899 <br> IFSC: IOB0921 <br> HOLDER NAME: PRJHONMUFEE </center>"
+            }
+        </script>
+    </body>
+    <footer style="margin-top: 30px; color: #f7f6f6;">
+
+      &copy;2024 Techspark-2k24, ESEC. All Rights Reserved. 
+    </footer>
+    </html>
