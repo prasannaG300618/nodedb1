@@ -98,7 +98,7 @@ app.post("/data", upload.single('img') ,(req, res) => {
     from: 'techsparkk.2k24@gmail.com',
     to: mailfin,
     subject: 'Conformatoin Mail',
-    text: "Thank you for your reegistration."
+    text: "Thank you for your registered. Whatsapp Link: https://chat.whatsapp.com/LDk7sONV09gCDEvToaJzaV , Student co-ordinators: Vikram B, Dharneesh M.T(+91 6374 506 995), Pavithra S(+91 95780 68622) Staff Co-ordinator: Dhanabal M(+91 99940 36446) "
   };
   
   transporter.sendMail(mailOptions, function(error, info){
