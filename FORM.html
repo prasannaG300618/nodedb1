@@ -649,7 +649,7 @@ ul.card{
              <center> <label id ="h4"for=""></label></center><!--or-->
                 <div id="box2"> <center><label for="" id="h5"></label></center></div>
             <label id="det">Upload payment proof</label>
-         <input type="file" name="img" id="img">
+       <button type="button" onclick="app()"> <a  id="paymentproof" href="https://docs.google.com/forms/d/e/1FAIpQLSdy7QpyjbTEGhjc_q-8gvJoLvSYzog0oFHRa-83iHaQmBPutg/viewform?usp=sf_link" target="_blank" >Click to Upload Proof</a></button>
          <div id="box3"> 
          <p style="font-size: 18px;">Total Fees</p>
          
@@ -740,6 +740,7 @@ $(document).ready(function(){
            
   /*Payment enable function*/ 
             function amont(){
+		     document.getElementById("sub").removeAttribute("disabled");
               window.alert("Type "+bill1+" while pay the amount")
 document.getElementById('qr').style.display='block'
 document.getElementById('pay').style.display='none'
