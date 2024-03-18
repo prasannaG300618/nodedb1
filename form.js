@@ -98,7 +98,7 @@ app.post("/data", upload.single('img') ,(req, res) => {
     from: 'techsparkk.2k24@gmail.com',
     to: mailfin,
     subject: 'Conformatoin Mail',
-    text: "Thank you for your registered. Whatsapp Link: https://chat.whatsapp.com/LDk7sONV09gCDEvToaJzaV , Student co-ordinators: Vikram B, Dharneesh M.T(+91 6374 506 995), Pavithra S(+91 95780 68622) Staff Co-ordinator: Dhanabal M(+91 99940 36446) "
+   html: "<h5>Thank you for registration </h5><br><p>Dear participant your are succesfully registered for Event. If you are regitered for paper presenation kindly send the absract to this mail. </p> <br> <p> <br> <p>Do you intrested to attend our second day event workshop on 'Angular JS' click the below link and register for it. <br> <h5>Worshop Registration Link:</h5><a href='https://docs.google.com/forms/d/e/1FAIpQLScSPfB-bj7Vx3UC7zPT5YNd4u_Q7GpM-bSoe8oELkEOjasY9g/viewform?usp=sf_link'>https://docs.google.com/forms/d/e/1FAIpQLScSPfB-bj7Vx3UC7zPT5YNd4u_Q7GpM-bSoe8oELkEOjasY9g/viewform?usp=sf_link</a></p><br> <p>Join with our Whatsapp Group<br> Whatsapp : <a href='https://chat.whatsapp.com/LDk7sONV09gCDEvToaJzaV'>https://chat.whatsapp.com/LDk7sONV09gCDEvToaJzaV</a></p> <br> <h5>contact:</h5><br>Mr.M.Dhanabal AP/IT(9994036446) <br>S.Pavithra(9994036446)<br> M.T.Dharneesh(6374506995) <br> B.Vikram Kumar(9500579700)</p><center>THANK YOU..</center>"
   };
   
   transporter.sendMail(mailOptions, function(error, info){
