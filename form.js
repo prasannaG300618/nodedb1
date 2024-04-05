@@ -43,6 +43,9 @@ app.use(express.urlencoded({extended: true}));
 app.get("/",(req,res)=>{
    return res.sendFile(__dirname+'/FORM.html')
 });
+app.get("/offline.html",(req,res)=>{
+  res.sendFile(__dirname+'/offline.html')
+})
 app.post("/data", upload.single('img') ,(req, res) => {
     const username = req.body.name;
     const name2=req.body.name2;
